@@ -1,0 +1,60 @@
+{
+  "name": "multimodal-data-platform-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Multimodal Data Intelligence Platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run"
+  },
+  "keywords": ["multimodal", "data", "ai", "rag", "ocr", "processing"],
+  "author": "Multimodal Data Platform Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.6",
+    "pdf-parse": "^1.1.1",
+    "tesseract.js": "^5.0.4",
+    "ffmpeg": "^0.0.4",
+    "socket.io": "^4.7.4",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3",
+    "redis": "^4.6.11",
+    "bull": "^4.12.2",
+    "winston": "^3.11.0",
+    "joi": "^17.11.0",
+    "uuid": "^9.0.1",
+    "axios": "^1.6.2",
+    "openai": "^4.20.1",
+    "langchain": "^0.0.215",
+    "faiss-node": "^0.5.1",
+    "sentence-transformers": "^0.0.1",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.55.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
